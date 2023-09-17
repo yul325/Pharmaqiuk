@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="116.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/Prescriptions2.png" />
+         </image></ImageView>
+      <VBox prefHeight="490.0" prefWidth="360.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="403.0" prefWidth="360.0" vbarPolicy="NEVER">
+               <content>
+                  <VBox alignment="TOP_CENTER" prefHeight="506.0" prefWidth="355.0" spacing="30.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button defaultButton="true" mnemonicParsing="false" prefHeight="53.0" prefWidth="290.0" stylesheets="@../../../css/syling.css" text="Prescription1" textFill="WHITE" />
+                        <Button defaultButton="true" layoutX="45.0" layoutY="10.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="290.0" stylesheets="@../../../css/syling.css" text="Prescription2" textFill="WHITE" />
+                        <Button defaultButton="true" layoutX="45.0" layoutY="123.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="290.0" stylesheets="@../../../css/syling.css" text="Prescription3" textFill="WHITE" />
+                        <Button defaultButton="true" layoutX="45.0" layoutY="206.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="290.0" stylesheets="@../../../css/syling.css" text="Prescription4" textFill="WHITE" />
+                        <Button defaultButton="true" layoutX="45.0" layoutY="289.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="290.0" stylesheets="@../../../css/syling.css" text="Prescription5" textFill="WHITE" />
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </content></ScrollPane>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="360.0" spacing="80.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="pickup_button" mnemonicParsing="false" onAction="#pickUpAction" prefHeight="47.0" prefWidth="109.0" text="PICK UP" />
+                  <Button fx:id="deliver_button" layoutX="136.0" layoutY="26.0" mnemonicParsing="false" onAction="#deliverAction" prefHeight="47.0" prefWidth="109.0" text="DELIVER" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="85.0" prefWidth="360.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" stylesheets="@../../../css/MenuButton.css" text="Prescription" textFill="WHITE" />
+            <Button fx:id="info_button" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchInfoMenu" prefHeight="80.0" prefWidth="120.0" stylesheets="@../../../css/MenuButton.css" text="General Info" textFill="WHITE" />
+            <Button fx:id="shot_button" layoutX="130.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchShotMenu" prefHeight="80.0" prefWidth="120.0" stylesheets="@../../../css/MenuButton.css" text="Shot Appointment" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

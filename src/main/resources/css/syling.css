@@ -1,0 +1,14 @@
+.button {
+    -fx-background-color: rgba(255, 255, 255, 0.86);
+    -fx-border: none;
+    -fx-color: white;
+}
+
+
+.button:hover {
+    -fx-background-color: rgba(192, 192, 192, 0.86);
+}
+
+.button:pressed {
+    -fx-background-color: rgba(192, 192, 192, 0.86);
+}

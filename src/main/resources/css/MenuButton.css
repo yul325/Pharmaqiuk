@@ -1,0 +1,15 @@
+.button:hover{
+    -fx-background-color: rgba(206, 206, 206, 0.86);
+    -fx-color: rgba(206, 206, 206, 0.86);
+    -fx-padding: 15px 32px;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+}
+
+.button:pressed{
+    -fx-background-color: rgba(206, 206, 206, 0.86);
+    -fx-color: rgba(206, 206, 206, 0.86);
+    -fx-padding: 15px 32px;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+}
